@@ -31,6 +31,7 @@
 #include <functional>
 #include <vector>
 #include <atomic>
+#include <cstdint>
 
 #include "livox_lidar_def.h"
 
@@ -83,7 +84,7 @@ typedef struct {
 } LivoxLidarLoggerCfg;
 
 typedef struct {
-  bool master_sdk;
+  bool master_sdk = true;
 } LivoxLidarSdkFrameworkCfg;
 
 typedef enum {
